@@ -65,10 +65,58 @@ fun main() {
         println(item)
     }
 
+    /*function*/
+
+    /*fun functionName(parameter1: Type, parameter2: Type): ReturnType {
+    // Function body
+    return value
+}
+    *
+    * */
+
+    fun addNumbers(num1: Int, num2: Int): Int {
+        return num1 + num2;
+    }
+
+    println(addNumbers(2,2))
+
+    fun displayName(str: String): /*Unit*/ String {
+        return "welcome to Bangladesh" + str
+//        println("Welcome to $str")
+    }
+
+    println(displayName(" Maruf"))
+
+    fun configuration(param1: Int,param2: Int= 56,param3: String="Bangladesh"): String {
+
+        return param1.toString() + param2.toString() + param3
+    }
+
+    println(configuration(4,5))
 
 
+    fun concatStrings(param1: String,param2: Int,param3: Double=10.00): String {
 
-    /*loop operation*/
+        var result = ""
+
+        for(i in 1 .. param3.toInt()){
+            result += i.toString() + param2.toString()
+        }
+
+        return result
+    }
+
+    println(concatStrings("together",12))
+
+    val method1 = LearnOop()
+    println(method1.initial)
+    println(method1.oop1(5,6))
+
+
+    val oopCons = OopConstructor(1,2,"maruf from constructor")
+
+    println(oopCons.param2)
+
 
 
 

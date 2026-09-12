@@ -113,9 +113,21 @@ fun main() {
     println(method1.oop1(5,6))
 
 
-    val oopCons = OopConstructor(1,2,"maruf from constructor")
+//    val oopCons = OopConstructor(1,2,"maruf from constructor")
 
-    println(oopCons.param2)
+//    println(oopCons.param2)
+
+    val oopCons = OopConstructor(12,0,"from Bangladesh")
+
+    oopCons.methodOne()
+    oopCons.methodThree(14)
+    oopCons.methodFour("ahmed")
+
+    val oopIn = OopInheritance2("bangladesh","dhaka","dhanmond",23)
+
+    println(oopIn.personDetails())
+
+
 
 
 

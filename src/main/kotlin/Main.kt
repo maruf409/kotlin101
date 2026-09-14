@@ -127,6 +127,23 @@ fun main() {
 
     println(oopIn.personDetails())
 
+    val myAccount = OopEncapsulation("Alex",5000.0)
+
+    myAccount.deposit(150.0)
+    myAccount.withdraw(700.0)
+
+    println(myAccount.currentBalance)
+
+    val user1 = Person("ahmed",56,500.99)
+
+    println(user1.income)
+
+    val user2 = user1.copy(age= 32, income = 60000.0)
+
+
+    println(user2.age)
+    println(user2.income)
+
 
 
 
